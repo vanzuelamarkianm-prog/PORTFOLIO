@@ -137,19 +137,59 @@
       </div>
     </section>
     
+
+<!-- MOCK INTERVIEW NAV BUTTON -->
+<a href="#mock-interview" class="nav-link">
+  Mock Interview
+</a>
+
 <!-- MOCK INTERVIEW SECTION -->
 <section id="mock-interview" class="section">
   <div class="container">
     <h2>Mock Interview</h2>
 
-    <video controls playsinline preload="metadata"
-           style="width: 100%; max-width: 900px; display: block; margin: 30px auto;">
+    <video
+      controls
+      playsinline
+      preload="metadata"
+      class="mock-interview-video"
+    >
       <source src="mock-interview.mp4" type="video/mp4">
-      Your browser does not support the video tag.
+      Your browser does not support video playback.
     </video>
   </div>
 </section>
-<!-- END MOCK INTERVIEW SECTION -->
+
+<!-- MOCK INTERVIEW STYLES -->
+<style>
+  .nav-link[href="#mock-interview"] {
+    display: inline-block;
+    padding: 10px 18px;
+    border: 1px solid #639242;
+    border-radius: 6px;
+    color: #639242;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+
+  .nav-link[href="#mock-interview"]:hover {
+    background: #639242;
+    color: #ffffff;
+  }
+
+  #mock-interview {
+    scroll-margin-top: 80px;
+  }
+
+  .mock-interview-video {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+    border-radius: 12px;
+    background: #000;
+  }
+</style>
     
     <section class="section section-muted resume-section" id="resume">
       <div class="container">
