@@ -511,3 +511,84 @@ footer {
 :focus-visible {
   outline-color: #9872cc;
 }
+
+
+/* REMOVE REMAINING GREEN COLORS - PURPLE THEME */
+
+:root {
+  --green: #9270C9;
+  --violet: #9270C9;
+  --accent: #9270C9;
+  --primary: #9270C9;
+  --secondary: #CBB6ED;
+}
+
+/* Text and headings */
+h1, h2, h3, h4, h5,
+.section-title,
+.section-subtitle,
+.highlight,
+.accent,
+strong {
+  color: #9270C9;
+}
+
+/* Links */
+a,
+a:hover,
+.nav-links a:hover,
+.nav-links a.active {
+  color: #9270C9;
+}
+
+/* Buttons */
+button,
+.btn,
+.btn-primary,
+.btn-outline:hover {
+  background-color: #9270C9;
+  border-color: #9270C9;
+}
+
+button:hover,
+.btn:hover,
+.btn-primary:hover {
+  background-color: #7652AD;
+  border-color: #7652AD;
+}
+
+/* Icons and decorative elements */
+i,
+.icon,
+.skill-icon,
+.project-icon {
+  color: #9270C9;
+}
+
+/* Tags and badges */
+.tag,
+.badge,
+.skill-tag,
+.project-tag {
+  background-color: #F0E9FA;
+  color: #7652AD;
+  border-color: #CBB6ED;
+}
+
+/* Borders and highlights */
+.card,
+.project-card,
+.skill-card,
+.certificate-card {
+  border-color: #E4D9F3;
+}
+
+/* Selection and focus */
+::selection {
+  background: #CBB6ED;
+  color: #281D38;
+}
+
+:focus-visible {
+  outline-color: #9270C9;
+}
