@@ -699,3 +699,54 @@ h2 span,
   background: #CBB6ED;
   color: #281D38;
 }
+
+/* FLOATING PURPLE PARTICLES BACKGROUND */
+
+#particles-background {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.particle {
+  position: absolute;
+  bottom: -20px;
+  display: block;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background: #B99AE8;
+  opacity: 0;
+  box-shadow: 0 0 12px #9270C9,
+              0 0 24px rgba(146,112,201,.45);
+  animation: floatParticle var(--duration) linear infinite;
+  animation-delay: var(--delay);
+}
+
+@keyframes floatParticle {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+  10% { opacity: .55; }
+  80% { opacity: .35; }
+  100% {
+    transform: translate3d(var(--drift), -110vh, 0);
+    opacity: 0;
+  }
+}
+
+#particles-background {
+  isolation: isolate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .particle {
+    animation: none;
+    display: none;
+  }
+}
