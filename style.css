@@ -205,3 +205,309 @@ body{background-image:radial-gradient(ellipse at 2% 12%,rgba(185,243,107,.12),tr
   .project-portal-showcase .portal-showcase-image img,
   .project-portal-showcase .portal-feature-list span { transition: none !important; }
 }
+
+
+/* =========================================
+   ELEGANT PURPLE THEME
+   Lavender • Plum • Soft Violet
+========================================= */
+
+:root {
+  --ink: #29213b;
+  --muted: #766b85;
+  --paper: #fcfaff;
+  --violet: #9270c9;
+  --line: #e8dff2;
+  --dark: #281d38;
+  --green: #cbb6ed;
+  --electric: #c5a8f0;
+  --deep: #281d38;
+  --gold: #b99adf;
+}
+
+/* GENERAL */
+body {
+  background-color: #fcfaff;
+  color: #29213b;
+}
+
+a:hover,
+.text-link:hover {
+  color: #9165c5;
+}
+
+/* HEADER & NAVIGATION */
+.site-header {
+  background: rgba(252, 250, 255, .94);
+  border-bottom-color: #e8dff2;
+}
+
+.brand span {
+  color: #9670c9;
+}
+
+.nav-links a:not(.nav-cta) {
+  color: #655779;
+}
+
+.nav-links a:hover {
+  color: #9165c5;
+}
+
+.nav-cta {
+  background: #39264f;
+  color: #fff;
+}
+
+/* BUTTONS */
+.primary {
+  background: #cbb6ed;
+  color: #30213f;
+}
+
+.secondary {
+  border-color: #dfd0ef;
+  color: #49345e;
+}
+
+.button:hover {
+  box-shadow: 0 8px 22px rgba(103, 70, 148, .15);
+}
+
+/* HEADINGS */
+h1 span,
+h2 span {
+  color: #9872cc;
+}
+
+.eyebrow {
+  color: #9270c9;
+}
+
+.status-dot {
+  background: #a987d7;
+}
+
+/* HERO SECTION */
+.hero {
+  background:
+    radial-gradient(
+      ellipse at 85% 38%,
+      #eee4fa 0,
+      transparent 36%
+    );
+}
+
+.orb-one {
+  background: #e9dcf8;
+}
+
+.orb-two {
+  background: #cbb4ed;
+}
+
+/* QUICK STATS */
+.quick-stats {
+  background: #fff;
+  border-color: #e8dff2;
+}
+
+/* SKILLS */
+.section-muted {
+  background: #f5f0fa;
+}
+
+.skill-card {
+  border-color: #e8dff2;
+}
+
+.skill-icon {
+  background: #eee5f8;
+  color: #8060ac;
+}
+
+.skill-level {
+  background: #eee7f5;
+}
+
+.skill-level span {
+  background: #a17bce;
+}
+
+/* PROJECTS */
+.project-card {
+  border-color: #e8dff2;
+}
+
+.project-card:hover {
+  box-shadow: 0 18px 35px rgba(83, 56, 113, .10);
+}
+
+.project-type {
+  color: #9270c9;
+}
+
+.tech-tags span {
+  background: #f7f2fb;
+  border-color: #e8dff2;
+}
+
+/* DARK SECTION */
+.section-dark {
+  background: #281d38;
+  color: #f9f5ff;
+}
+
+.section-dark .eyebrow {
+  color: #c8a9ed;
+}
+
+.section-dark h2 span {
+  color: #c5a4ec;
+}
+
+.section-dark .section-intro {
+  color: #d0c4df;
+}
+
+.cases {
+  border-color: #59466c;
+}
+
+.cases details {
+  border-color: #59466c;
+}
+
+.cases summary span,
+.cases summary b {
+  color: #c8a9ed;
+}
+
+/* INTERVIEW CARD */
+.interview-card {
+  background: #f0e8fa;
+  color: #39294c;
+}
+
+.quote-mark {
+  color: #a47bce;
+}
+
+.interview-card p {
+  color: #39294c;
+}
+
+.interview-card small {
+  color: #8662af;
+}
+
+/* RESUME */
+.resume-section {
+  background: linear-gradient(
+    145deg,
+    #f1eafa 0%,
+    #faf8fd 48%,
+    #eee4f8 100%
+  );
+}
+
+.resume-document {
+  border-color: #e5d9f0;
+}
+
+.resume-document:before {
+  background: linear-gradient(
+    90deg,
+    #39264f,
+    #9670c9,
+    #c8afe9,
+    #39264f
+  );
+}
+
+.resume-heading {
+  background: radial-gradient(
+    ellipse at 95% 0%,
+    rgba(190, 160, 226, .2),
+    transparent 45%
+  ), #fcfaff;
+}
+
+.resume-kicker {
+  color: #9270c9;
+}
+
+.resume-identity h3 span {
+  color: #9270c9;
+}
+
+.resume-photo-frame {
+  background: linear-gradient(
+    145deg,
+    #9670c9,
+    #d6c2ef
+  );
+}
+
+.resume-block h4 span {
+  color: #9872cc;
+}
+
+/* CERTIFICATES */
+.certificate-card {
+  border-color: #e5d9f0;
+}
+
+.certificate-card:hover,
+.certificate-card:focus-visible {
+  border-color: #9872cc;
+  box-shadow: 0 18px 38px rgba(83, 56, 113, .15);
+}
+
+.certificate-lightbox {
+  background: rgba(29, 19, 43, .93);
+}
+
+/* GITHUB */
+.github-mark {
+  background: #39264f;
+  color: #d6baf7;
+}
+
+/* CONTACT */
+.contact-section {
+  background: #f0e8fa;
+}
+
+.contact-links a {
+  border-color: #e3d5f0;
+}
+
+/* MOCK INTERVIEW */
+#mock-interview {
+  background: #f5f0fa;
+}
+
+#mock-interview h2 span {
+  color: #9872cc;
+}
+
+#mock-interview .mock-interview-video {
+  border: 3px solid #e3d5f0;
+}
+
+/* FOOTER */
+footer {
+  background: #fff;
+  border-top-color: #e8dff2;
+}
+
+/* SMOOTH PURPLE ACCENTS */
+::selection {
+  background: #dfcef5;
+  color: #30213f;
+}
+
+:focus-visible {
+  outline-color: #9872cc;
+}
