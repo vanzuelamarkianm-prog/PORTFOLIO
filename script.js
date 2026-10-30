@@ -49,3 +49,30 @@ document.addEventListener("DOMContentLoaded", function () {
     if (event.key === "Escape" && lightbox.classList.contains("is-open")) closePreview();
   });
 });
+
+/* FLOATING PURPLE PARTICLES */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const background = document.getElementById("particles-background");
+
+  if (!background) return;
+
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    return;
+  }
+
+  const particleCount = window.innerWidth < 650 ? 16 : 30;
+
+  for (let i = 0; i < particleCount; i++) {
+    const particle = document.createElement("span");
+
+    particle.className = "particle";
+    particle.style.left = Math.random() * 100 + "%";
+    particle.style.setProperty("--size", (3 + Math.random() * 5) + "px");
+    particle.style.setProperty("--duration", (12 + Math.random() * 15) + "s");
+    particle.style.setProperty("--delay", (-Math.random() * 25) + "s");
+    particle.style.setProperty("--drift", (Math.random() * 100 - 50) + "px");
+
+    background.appendChild(particle);
+  }
+});
