@@ -592,3 +592,110 @@ i,
 :focus-visible {
   outline-color: #9270C9;
 }
+
+
+/* PURPLE COLOR OVERRIDE - KEEP ORIGINAL DESIGN */
+
+:root {
+  --green: #9270C9;
+  --electric: #B99AE8;
+  --deep: #281D38;
+  --gold: #CBB6ED;
+  --violet: #9270C9;
+}
+
+/* Green text */
+.brand span,
+.nav-links a:hover,
+.text-link:hover,
+.eyebrow,
+h1 span,
+h2 span,
+.project-type,
+.resume-list span,
+.resume-kicker,
+.resume-identity h3 span,
+.resume-block h4 span,
+.timeline span,
+.cases summary span,
+.cases summary b,
+.value-tags span,
+.tech-tags span {
+  color: #9270C9;
+}
+
+/* Gradient text */
+.section h2 span {
+  background: linear-gradient(100deg, #7652AD, #CBB6ED);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Green backgrounds */
+.status-dot,
+.primary,
+.skill-level span,
+.skill-icon,
+.evidence-icon,
+.github-mark,
+.orb-one,
+.orb-two {
+  background-color: #9270C9;
+}
+
+/* Soft purple backgrounds */
+.hero,
+.section-muted,
+.contact-section,
+.resume-section,
+.interview-card,
+.visual-portal {
+  background-color: #F3EDFA;
+}
+
+/* Green borders */
+.certificate-card:hover,
+.certificate-card:focus-visible {
+  border-color: #9270C9;
+}
+
+/* Green decorative elements */
+.code-card b,
+.cases summary span,
+.cases summary b,
+.timeline span {
+  color: #CBB6ED;
+}
+
+.resume-document:before {
+  background: linear-gradient(
+    90deg,
+    #281D38,
+    #9270C9,
+    #CBB6ED,
+    #281D38
+  );
+}
+
+.resume-photo-frame {
+  background: linear-gradient(145deg, #9270C9, #CBB6ED);
+}
+
+.resume-block h4 span {
+  color: #9270C9;
+}
+
+/* Remaining green gradients */
+.hero:before {
+  border-color: rgba(146, 112, 201, .18);
+  box-shadow:
+    0 0 0 34px rgba(146, 112, 201, .05),
+    0 0 0 72px rgba(146, 112, 201, .035);
+}
+
+/* Purple selection */
+::selection {
+  background: #CBB6ED;
+  color: #281D38;
+}
